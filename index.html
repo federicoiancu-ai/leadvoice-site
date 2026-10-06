@@ -87,6 +87,14 @@
   @media (max-width:820px) { .principles { grid-template-columns:1fr; } }
   .principles .card h3 { font-size:18px; margin-top:8px; }
 
+  .team { margin-top:32px; display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+  @media (max-width:640px) { .team { grid-template-columns:1fr; } }
+  .person { display:flex; align-items:center; gap:16px; }
+  .avatar { width:52px; height:52px; border-radius:50%; background:var(--accent-soft); color:var(--accent);
+            display:grid; place-items:center; font-weight:700; font-size:18px; flex:none; }
+  .person h3 { font-size:18px; }
+  .person .role { color:var(--muted); font-size:14px; }
+  .person a { font-size:14px; font-weight:600; text-decoration:none; }
   .quote { font-size:clamp(20px, 2.6vw, 26px); line-height:1.45; letter-spacing:-.01em; max-width:860px; font-weight:500; }
   .contact { display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
   footer { border-top:1px solid var(--line); padding:28px 0 40px; color:var(--muted); font-size:14px; }
@@ -105,6 +113,7 @@
     <nav>
       <a class="link" href="#come"><span class="it">Come funziona</span><span class="en">How it works</span></a>
       <a class="link" href="#principi"><span class="it">Principi</span><span class="en">Principles</span></a>
+      <a class="link" href="#team">Team</a>
       <a class="link" href="#contatti"><span class="it">Contatti</span><span class="en">Contact</span></a>
       <div class="lang" role="group" aria-label="Lingua / Language">
         <button type="button" data-set="it" aria-pressed="true">IT</button>
@@ -180,6 +189,31 @@
       <div class="eyebrow"><span class="it">Perché</span><span class="en">Why</span></div>
       <p class="quote it" style="margin-top:14px">L’intelligenza non dovrebbe chiederci di fermarci per usarla. Dovrebbe esserci quando serve, portare con sé il contesto rilevante e ridurre il lavoro di orchestrare tecnologia invece di aggiungerne. Dovrebbe aiutarci a trasformare l’intenzione in azione e l’azione in progresso reale. Meno attrito. Meno rumore. Più attenzione per pensare, imparare, lavorare e vivere. Tu scegli la direzione. LEAD riduce la distanza.</p>
       <p class="quote en" style="margin-top:14px">Intelligence shouldn’t make us stop to use it. It should be there when it matters, carry the relevant context, and reduce the work of orchestrating technology instead of adding more. It should help us turn intention into action and action into real progress. Less friction. Less noise. More attention to think, learn, work, and live. You choose the direction. LEAD reduces the distance.</p>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="wrap">
+      <div class="eyebrow">Team</div>
+      <h2><span class="it">Chi costruisce LEAD</span><span class="en">Who is building LEAD</span></h2>
+      <div class="team">
+        <div class="card person">
+          <div class="avatar" aria-hidden="true">GF</div>
+          <div>
+            <h3>Giuliano Federico Iancu</h3>
+            <div class="role">Co-founder</div>
+            <a href="https://www.linkedin.com/in/giuliano-federico-i-641344186" rel="noopener" target="_blank">LinkedIn ↗</a>
+          </div>
+        </div>
+        <div class="card person">
+          <div class="avatar" aria-hidden="true">AP</div>
+          <div>
+            <h3>Alessio Papagni</h3>
+            <div class="role">Co-founder</div>
+            <a href="https://www.linkedin.com/in/alessio-papagni" rel="noopener" target="_blank">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
